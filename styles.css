@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito Sans', Arial, sans-serif;
 }
 
 .component1-header {
@@ -20,7 +21,7 @@
     font-weight: 700;
     text-align: center;
     width: 100%;
-    font-family: 'Nunito Sans', Arial, sans-serif;
+
     padding: 4px;
 }
 
@@ -67,7 +68,8 @@ input::placeholder {
     display: flex;
     align-items: last baseline;
 }
-#nome-pesquisa{
+
+#nome-pesquisa {
     font-size: 12px;
     position: absolute;
     /* top:10px; */
@@ -124,14 +126,17 @@ li {
     list-style-type: none;
 
 }
+
 .container-imgs {
-width: 100%; 
+    width: 100%;
 }
-.fundo-branco{
+
+.fundo-branco {
     /* border:1px solid green; */
     position: absolute;
-  
+
 }
+
 .cadeira-com-roupas {
     position: absolute;
     left: 370px;
@@ -140,40 +145,127 @@ width: 100%;
 .super-sale {
     position: absolute;
     left: 1070px;
-    top:100px;
+    top: 100px;
 }
+
 /* Container that keeps the whole content */
-.main-container{
+.main-container {
     display: flex;
     flex-direction: column;
 }
-.carrosel{
+
+.lancamentos-ver-mais {
+    display: flex;
+    justify-content: space-between;
+    width: 1259px;
+    height: 27px;
+}
+
+.lancamentos-ver-mais h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+
+}
+
+.lancamentos-ver-mais p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+
+}
+
+.carrosel {
     display: flex;
     flex-direction: row;
-}
-.card{
-width: 238px;
-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-margin:10px;
-color:rgb(128, 128, 128);
-}
-.cem-reais{
-color: rgb(128, 128, 128);
-font-size:12px;
-}
-.setenta-e-nove{
-    color: black;
-}
-.dez-porcento{
-background-color: #5EC0BE;
-width: 64px;
-height:20px;
-color:white;
-display: flex;
-align-items: center;
-justify-content: center ;
 
-padding:2px;
-font-size:13px;
-border-radius: 4px;
+}
+
+.card {
+    width: 238px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin: 10px;
+    color: rgb(128, 128, 128);
+}
+.card p{
+    font-weight: 400;
+    font-size:12px;
+}
+
+.cem-reais {
+    color: rgb(128, 128, 128);
+    font-size: 12px;
+}
+
+.imagem-homem {
+    position: relative;
+}
+
+.novo {
+    position: absolute;
+    background-color: #00264E;
+    color: white;
+    top: 530px;
+    /* width: 41px;
+    height: 22px; */
+    border-radius: 4px;
+    padding: 2px 3px;
+
+}
+
+.setenta-e-nove {
+    color: black;
+    font-weight: 700;
+}
+
+.valores-cem-setenta-e-nove {
+    display: block;
+    margin-top:4px;
+}
+
+.dez-porcento {
+    background-color: #5EC0BE;
+    width: 64px;
+    height: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    padding-left: 1px;
+    padding-right: 1px;
+    font-size: 11px;
+    border-radius: 4px;
+    text-decoration: underline;
+    line-height: 12px;
+}
+
+.parcelas {
+    color: #303030;
+    font-weight: 700;
+    
+}
+
+#p-parcelas {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    margin-top: 4px;
+}
+
+.valores-dez-por-cento {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-comprar {
+    margin:10px;    
+    background-color: #005CFF;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 24px;
+    cursor: pointer;
 }
