@@ -127,10 +127,16 @@ li {
 
 }
 
-.container-imgs {
-    width: 100%;
+ .container-imgs{
+    max-width: 100%;
+    margin:0 auto;
 }
+ 
 
+.container-imgs img{
+    display:grid;
+    grid-template-rows: 200px;
+}
 .fundo-branco {
     /* border:1px solid green; */
     position: absolute;
@@ -159,7 +165,9 @@ li {
     justify-content: space-between;
     width: 1259px;
     height: 27px;
+    margin:0 auto;
 }
+
 
 .lancamentos-ver-mais h2 {
     font-weight: 700;
@@ -172,13 +180,19 @@ li {
     font-weight: 700;
     font-size: 14px;
     line-height: 14px;
-
+    cursor: pointer;
 }
 
 .carrosel {
-    display: flex;
-    flex-direction: row;
+     display: flex; 
+     flex-direction: column;  
+    align-items: center;
+    justify-content:end;
+        }
 
+.card-geral {
+    display: grid;
+    grid-template-columns: repeat(5,255px);
 }
 
 .card {
@@ -187,9 +201,10 @@ li {
     margin: 10px;
     color: rgb(128, 128, 128);
 }
-.card p{
+
+.card .card p {
     font-weight: 400;
-    font-size:12px;
+    font-size: 12px;
 }
 
 .cem-reais {
@@ -206,8 +221,6 @@ li {
     background-color: #00264E;
     color: white;
     top: 530px;
-    /* width: 41px;
-    height: 22px; */
     border-radius: 4px;
     padding: 2px 3px;
 
@@ -220,7 +233,7 @@ li {
 
 .valores-cem-setenta-e-nove {
     display: block;
-    margin-top:4px;
+    margin-top: 4px;
 }
 
 .dez-porcento {
@@ -243,7 +256,7 @@ li {
 .parcelas {
     color: #303030;
     font-weight: 700;
-    
+
 }
 
 #p-parcelas {
@@ -261,11 +274,15 @@ li {
 }
 
 .btn-comprar {
-    margin:10px;    
+    margin: 10px;
     background-color: #005CFF;
     color: white;
     text-align: center;
     border-radius: 8px;
     padding: 10px 24px;
     cursor: pointer;
+}
+
+.elipses {
+        
 }
